@@ -1,0 +1,136 @@
+
+*{
+	padding: 0;/*pd=inner space and mg=outer space*/
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'poppins', sans-serif;
+}
+
+section{
+	position: relative;
+	width: 100%;
+    height: 100vh;
+    padding: 50px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+	background: #5ec39a;
+	background-size: cover;
+	
+}
+section video{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 0px 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10;
+    
+}
+
+
+header .logo{
+	position: relative;
+	max-width: 140px;
+}
+header ul{
+    position: relative;
+    display: flex;
+    
+}
+header ul li{ list-style: none;}
+header ul li a{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(11, 109, 246);
+    margin-left: 40px;
+    text-decoration: none;
+    
+}
+header ul li a:hover{
+  color: #e01212;
+  width: 8%; 
+    transform: translateX(100%); 
+} 
+.content{
+    position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	
+	z-index: 1;
+}
+.content .textbox{
+    position: relative;
+    max-width: 700px;
+}
+.content .textbox h2{
+    font-size: 2em;
+    line-height: 100px;
+    font-weight: 600;
+    word-spacing: 20px;
+    color: red;
+
+}
+.content .textbox h2 span{
+    text-transform: uppercase;
+    font-size: 2.3em;
+    font-weight: 900;
+}
+.content .textbox p{
+    font-size: 15px;
+    word-spacing: 5px;
+    line-height: 25px;
+    color: #ffffffb6;
+}
+.content .textbox h3{
+    font-size: 18px;
+    word-spacing: 5px;
+    line-height: 30px;
+    color: #edc351e2;
+}
+.content .textbox h4{
+    font-size: 12px;
+    word-spacing: 5px;
+    text-align: right;
+    color: #90d4f1;
+}
+.content .textbox h4 span{
+    font-size: 13px;
+    word-spacing: 2px;
+    text-align:right;
+    color: #a0e2fae0;
+}
+
+
+.content .textbox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 13px 40px;
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    border: 2px solid #fff;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+
+}
+
+.content .textbox a:hover{
+    background: transparent ;
+    color:#f20e0e;
+}
